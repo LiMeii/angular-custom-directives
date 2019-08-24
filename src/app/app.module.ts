@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { CustomComponentModule } from "./modules/custom-component/custom-component.module";
+import { CustomDirectivesModule } from "./modules/custom-directives/custom-directives.module";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,7 +13,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomComponentModule,
+    CustomDirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
